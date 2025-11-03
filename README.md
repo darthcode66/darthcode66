@@ -11,6 +11,10 @@ Este projeto permite verificar todas as suas atividades pendentes no Google Clas
 - 📊 Exibe pontuação máxima de cada atividade
 - 🔗 Fornece links diretos para as atividades
 
+## ⚠️ Problemas ou Erros?
+
+**Se você receber erros de escopos/permissões**, consulte o arquivo **[TROUBLESHOOTING.md](TROUBLESHOOTING.md)** com instruções detalhadas de solução de problemas.
+
 ## 🚀 Instalação
 
 ### 1. Pré-requisitos
@@ -167,6 +171,17 @@ Total: 5 atividade(s) pendente(s)
 
 ## 🐛 Solução de Problemas
 
+### Erro de Escopos/Permissões
+
+Se você receber um erro como:
+```
+Scope has changed from "..." to "..."
+```
+
+**SOLUÇÃO RÁPIDA:**
+1. Delete o arquivo `token.pickle`
+2. Veja o arquivo **[TROUBLESHOOTING.md](TROUBLESHOOTING.md)** para instruções detalhadas
+
 ### Erro: "credentials.json não encontrado"
 
 Certifique-se de que você:
@@ -174,19 +189,9 @@ Certifique-se de que você:
 2. Renomeou para `credentials.json`
 3. Colocou na mesma pasta do script
 
-### Erro: "Access blocked: This app's request is invalid"
+### Outros Problemas
 
-Verifique se você:
-1. Adicionou todos os escopos necessários na tela de consentimento
-2. Adicionou seu e-mail como usuário de teste
-3. Habilitou a Google Classroom API
-
-### Erro de autenticação
-
-Se você receber erros de autenticação:
-1. Delete o arquivo `token.pickle`
-2. Execute o script novamente
-3. Autorize novamente no navegador
+Para todos os outros problemas, consulte o guia completo: **[TROUBLESHOOTING.md](TROUBLESHOOTING.md)**
 
 ## 📝 Notas
 

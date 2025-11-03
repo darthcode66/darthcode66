@@ -47,14 +47,23 @@ def authenticate() -> Credentials:
     if not creds or not creds.valid:
         if creds and creds.expired and creds.refresh_token:
             print("Atualizando token de acesso...")
-            creds.refresh(Request())
-        else:
+            try:
+                creds.refresh(Request())
+            except Exception as e:
+                print(f"⚠️  Erro ao atualizar token: {e}")
+                print("Deletando token antigo e solicitando nova autenticação...\n")
+                if os.path.exists(TOKEN_FILE):
+                    os.remove(TOKEN_FILE)
+                creds = None
+
+        if not creds or not creds.valid:
             if not os.path.exists(CREDENTIALS_FILE):
                 raise FileNotFoundError(
                     f"Arquivo '{CREDENTIALS_FILE}' não encontrado. "
                     "Por favor, baixe suas credenciais OAuth2 do Google Cloud Console."
                 )
             print("Iniciando processo de autenticação...")
+            print("Uma janela do navegador será aberta para você autorizar o acesso.\n")
             flow = InstalledAppFlow.from_client_secrets_file(
                 CREDENTIALS_FILE, SCOPES
             )
@@ -63,7 +72,7 @@ def authenticate() -> Credentials:
         # Salva as credenciais para a próxima execução
         with open(TOKEN_FILE, 'wb') as token:
             pickle.dump(creds, token)
-        print("Autenticação concluída!\n")
+        print("✅ Autenticação concluída!\n")
 
     return creds
 
@@ -305,7 +314,30 @@ def main():
     except FileNotFoundError as e:
         print(f"\n❌ Erro: {e}\n")
     except Exception as e:
-        print(f"\n❌ Erro inesperado: {e}\n")
+        error_msg = str(e).lower()
+
+        # Verifica se é erro relacionado a escopos
+        if 'scope' in error_msg or 'permission' in error_msg or 'access' in error_msg:
+            print(f"\n❌ ERRO DE PERMISSÕES/ESCOPOS: {e}\n")
+            print("=" * 80)
+            print("🔧 SOLUÇÃO:")
+            print("=" * 80)
+            print()
+            print("1. Delete o arquivo 'token.pickle' (se existir)")
+            print("2. Verifique se adicionou TODOS os 3 escopos no Google Cloud Console:")
+            print("   • classroom.courses.readonly")
+            print("   • classroom.coursework.me.readonly")
+            print("   • classroom.student-submissions.me.readonly")
+            print()
+            print("3. Verifique se adicionou seu email como 'Test User'")
+            print("4. Execute o script novamente")
+            print()
+            print("📖 Para instruções detalhadas, veja: TROUBLESHOOTING.md")
+            print("=" * 80)
+            print()
+        else:
+            print(f"\n❌ Erro inesperado: {e}\n")
+            print("💡 Se o erro persistir, consulte o arquivo TROUBLESHOOTING.md\n")
 
 
 if __name__ == '__main__':
