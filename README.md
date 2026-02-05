@@ -2,7 +2,7 @@
 
 <h1>👋 Hey, I'm Pedro Marcandali</h1>
 
-<p><img src="https://readme-typing-svg.demobot.com/api?font=Fira+Code&size=22&duration=3000&pause=1000&color=6366F1&center=true&vCenter=true&multiline=true&width=600&lines=Full+Stack+Developer;Business+Intelligence+%26+AI;DevOps+Engineer" alt="typing" /></p>
+**Full Stack Developer · Business Intelligence & AI · DevOps**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pedro-marcandali-6a72a028a/)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:pedrohenriquealvesmarcan@gmail.com)
@@ -125,12 +125,8 @@ Audio transcription server using OpenAI Whisper. Receives audio via ManyChat web
 
 <div align="center">
 
-### GitHub Stats
+---
 
-![Pedro's GitHub stats](https://github-readme-stats.vercel.app/api?username=darthcode66&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&text_color=e6edf3&icon_color=6366f1&title_color=6366f1)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=darthcode66&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&text_color=e6edf3&title_color=6366f1)
-
-![GitHub Streak](https://streak-stats.dev/?user=darthcode66&theme=github-dark-tokociti&hide_border=true&stroke=6366f1&fire=6366f1&currstreaknum=e6edf3&sideNums=e6edf3&currstreaktext=e6edf3&datestext=8b949e&daystext=8b949e&titleText=e6edf3)
+📍 Americana, SP · 📧 pedrohenriquealvesmarcan@gmail.com
 
 </div>
