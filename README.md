@@ -1,208 +1,136 @@
-# Google Classroom - Verificador de Atividades Pendentes
+<div align="center">
 
-Este projeto permite verificar todas as suas atividades pendentes no Google Classroom através de um script Python que usa a API oficial do Google.
+<h1>👋 Hey, I'm Pedro Marcandali</h1>
 
-## 📋 Funcionalidades
+<p><img src="https://readme-typing-svg.demobot.com/api?font=Fira+Code&size=22&duration=3000&pause=1000&color=6366F1&center=true&vCenter=true&multiline=true&width=600&lines=Full+Stack+Developer;Business+Intelligence+%26+AI;DevOps+Engineer" alt="typing" /></p>
 
-- 🔍 Lista todos os cursos ativos
-- 📚 Verifica atividades não entregues em cada curso
-- ⏰ Mostra prazos de entrega
-- 🔴 Identifica atividades atrasadas
-- 📊 Exibe pontuação máxima de cada atividade
-- 🔗 Fornece links diretos para as atividades
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pedro-marcandali-6a72a028a/)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:pedrohenriquealvesmarcan@gmail.com)
+[![Location](https://img.shields.io/badge/Location-Americana%2C%20SP-239922?style=for-the-badge&logo=googlemaps&logoColor=white)](https://www.google.com/maps/place/Americana,+SP)
 
-## ⚠️ Problemas ou Erros?
+</div>
 
-**Se você receber erros de escopos/permissões**, consulte o arquivo **[TROUBLESHOOTING.md](TROUBLESHOOTING.md)** com instruções detalhadas de solução de problemas.
+---
 
-## 🚀 Instalação
+## 🚀 About Me
 
-### 1. Pré-requisitos
+Full Stack Developer with hands-on experience in **Business Intelligence**, **AI-powered platforms**, and **DevOps**. I build and maintain production systems integrating multiple APIs, manage multi-environment deployments (Dev / Staging / Prod), and work with AI models (Claude, GPT-4, Whisper).
 
-- Python 3.7 ou superior
-- Uma conta Google com acesso ao Google Classroom
+Currently studying **Computer Science** at FAM – Faculdade de Americana (5th semester) and working as **IT Assistant** at Ramalhos, where I lead the development of the company's BI platform and internal tools.
 
-### 2. Clone o repositório e instale as dependências
+---
 
-```bash
-# Clone o repositório
-git clone <url-do-repositorio>
-cd darthcode66
+## 🛠️ Tech Stack
 
-# Crie um ambiente virtual (recomendado)
-python3 -m venv venv
-source venv/bin/activate  # No Windows: venv\Scripts\activate
+### Languages & Core
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-for-badge&logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-for-badge&logo=javascript&logoColor=000)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-for-badge&logo=typescript&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479C1?style=flat-for-badge&logo=postgresql&logoColor=white)
+![Dart](https://img.shields.io/badge/Dart-0175C8?style=flat-for-badge&logo=dart&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-for-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B9?style=flat-for-badge&logo=css3&logoColor=white)
 
-# Instale as dependências
-pip install -r requirements.txt
-```
+### Backend & APIs
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-for-badge&logo=fastapi&logoColor=white)
+![Express](https://img.shields.io/badge/Express.js-404040?style=flat-for-badge&logo=express&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-for-badge&logo=nextdotjs&logoColor=white)
+![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-D71F00?style=flat-for-badge&logo=sqlalchemy&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-3982FE?style=flat-for-badge&logo=prisma&logoColor=white)
 
-## 🔑 Configuração do Google Cloud Console
+### Frontend
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-for-badge&logo=react&logoColor=000)
+![Tailwind](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=flat-for-badge&logo=tailwindcss&logoColor=white)
+![Shadcn](https://img.shields.io/badge/shadcn/ui-000000?style=flat-for-badge&logoColor=white)
+![Zustand](https://img.shields.io/badge/Zustand-1B1B1B?style=flat-for-badge&logoColor=white)
 
-Para usar este script, você precisa criar credenciais OAuth2 no Google Cloud Console. Siga os passos abaixo:
+### Databases
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat-for-badge&logo=postgresql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-for-badge&logo=redis&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat-for-badge&logo=supabase&logoColor=white)
 
-### Passo 1: Criar um Projeto no Google Cloud
+### AI & Data
+![Claude AI](https://img.shields.io/badge/Claude%20AI-A855F7?style=flat-for-badge&logoColor=white)
+![GPT-4](https://img.shields.io/badge/GPT--4-412391?style=flat-for-badge&logo=openai&logoColor=white)
+![Whisper](https://img.shields.io/badge/Whisper-412391?style=flat-for-badge&logo=openai&logoColor=white)
+![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-for-badge&logo=grafana&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-for-badge&logo=pandas&logoColor=white)
 
-1. Acesse o [Google Cloud Console](https://console.cloud.google.com/)
-2. Clique em **"Select a project"** no topo da página
-3. Clique em **"NEW PROJECT"**
-4. Digite um nome para o projeto (ex: "Classroom Checker")
-5. Clique em **"CREATE"**
+### DevOps & Infrastructure
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-for-badge&logo=docker&logoColor=white)
+![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat-for-badge&logo=nginx&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-for-badge&logo=linux&logoColor=000)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-for-badge&logo=vercel&logoColor=white)
+![Cloudflare](https://img.shields.io/badge/Cloudflare-F6821F?style=flat-for-badge&logo=cloudflare&logoColor=white)
 
-### Passo 2: Ativar a API do Google Classroom
+### Automation & Integrations
+![Playwright](https://img.shields.io/badge/Playwright-2ECC71?style=flat-for-badge&logoColor=white)
+![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=flat-for-badge&logo=selenium&logoColor=white)
+![Stripe](https://img.shields.io/badge/Stripe-635BFF?style=flat-for-badge&logo=stripe&logoColor=white)
+![Flutter](https://img.shields.io/badge/Flutter-54C5F8?style=flat-for-badge&logo=flutter&logoColor=white)
 
-1. No menu lateral, vá em **"APIs & Services"** > **"Library"**
-2. Pesquise por **"Google Classroom API"**
-3. Clique na API e depois em **"ENABLE"**
+---
 
-### Passo 3: Configurar a Tela de Consentimento OAuth
+## 📌 Featured Projects
 
-1. No menu lateral, vá em **"APIs & Services"** > **"OAuth consent screen"**
-2. Selecione **"External"** como User Type
-3. Clique em **"CREATE"**
-4. Preencha os campos obrigatórios:
-   - **App name**: Nome da sua aplicação (ex: "Classroom Checker")
-   - **User support email**: Seu e-mail
-   - **Developer contact information**: Seu e-mail
-5. Clique em **"SAVE AND CONTINUE"**
-6. Na seção **"Scopes"**, clique em **"ADD OR REMOVE SCOPES"**
-7. Procure e adicione os seguintes escopos:
-   - `https://www.googleapis.com/auth/classroom.courses.readonly`
-   - `https://www.googleapis.com/auth/classroom.coursework.me.readonly`
-   - `https://www.googleapis.com/auth/classroom.student-submissions.me.readonly`
-8. Clique em **"UPDATE"** e depois **"SAVE AND CONTINUE"**
-9. Na seção **"Test users"**, clique em **"ADD USERS"**
-10. Adicione seu e-mail do Google (o que você usa no Classroom)
-11. Clique em **"SAVE AND CONTINUE"**
+### 🏢 Analytics Platform — `analytics.nau.today` *(Production)*
+Production BI platform with embedded Grafana dashboards for sales, marketing, and finance. Multi-environment architecture (Dev / Staging / Prod), multi-country support (BR / MX), JWT auth, and role-based access control.
+> `Python` `FastAPI` `Express.js` `PostgreSQL` `Grafana` `Nginx` `Supabase`
 
-### Passo 4: Criar Credenciais OAuth2
+### 📱 Rede I Believe — Clube de Vantagens *(Google Play & App Store)*
+Multiplatform app (Flutter) connecting buyers, retailers, wholesalers, suppliers, and admins. Features flash offers with countdown, QR Code validation, interactive Google Maps, Firebase auth, and real-time analytics dashboards.
+> `Flutter` `Dart` `Firebase` `Firestore` `Cloud Functions` `Google Maps` `Node.js`
 
-1. No menu lateral, vá em **"APIs & Services"** > **"Credentials"**
-2. Clique em **"CREATE CREDENTIALS"** > **"OAuth client ID"**
-3. Selecione **"Desktop app"** como Application type
-4. Digite um nome (ex: "Classroom Desktop Client")
-5. Clique em **"CREATE"**
-6. Na janela que aparecer, clique em **"DOWNLOAD JSON"**
-7. **IMPORTANTE**: Renomeie o arquivo baixado para `credentials.json`
-8. Mova o arquivo `credentials.json` para a pasta raiz deste projeto
+### 📸 Snap-Self — SaaS Platform for Photographers *(In Development)*
+All-in-one platform for professional photography with advanced AI (Claude 3.5 + GPT-4 Vision + Gemini Pro). Photo analysis, event and school photography workflows, camera tethering via gPhoto2, and payments via Stripe + Mercado Pago + PIX.
+> `Next.js 15` `React 19` `TypeScript` `Prisma` `PostgreSQL` `Claude AI` `Stripe`
 
-### Estrutura do arquivo credentials.json
+### 🎫 Plataforma de Chamados TI *(Production)*
+IT ticket management system with JWT auth, real-time WebSocket updates, Telegram notifications, Kanban board, role-based permissions, and statistics dashboard.
+> `FastAPI` `PostgreSQL` `SQLAlchemy` `JWT` `WebSocket` `Telegram API`
 
-O arquivo deve estar no mesmo diretório que o `classroom_checker.py`:
+### 🎙️ Whisper Transcription Server *(Production)*
+Audio transcription server using OpenAI Whisper. Receives audio via ManyChat webhook, processes and returns transcription with multi-format support and Swagger-documented REST API.
+> `Python` `FastAPI` `OpenAI Whisper` `Swagger`
 
-```
-darthcode66/
-├── classroom_checker.py
-├── credentials.json       ← Arquivo baixado do Google Cloud
-├── requirements.txt
-└── README.md
-```
+---
 
-## 🎯 Como Usar
+## 📚 Education
 
-### Primeira Execução
+| Degree | Institution | Period |
+|--------|------------|--------|
+| Computer Science *(in progress)* | FAM – Faculdade de Americana | 2023 – 2027 |
+| Technical Degree in Systems Development | SENAI Santa Bárbara d'Oeste | Jul 2023 – Dec 2024 |
 
-Na primeira vez que você executar o script, ele abrirá uma janela do navegador para você autorizar o acesso:
+---
 
-```bash
-python classroom_checker.py
-```
+## 💼 Experience
 
-1. Uma janela do navegador será aberta
-2. Faça login com sua conta do Google (a mesma que você usa no Classroom)
-3. Clique em **"Permitir"** para autorizar o acesso
-4. Você pode fechar a janela do navegador após a autorização
-5. O script criará um arquivo `token.pickle` que armazenará suas credenciais
+- **IT Assistant** — Ramalhos *(Apr 2024 – Present)*
+  - BI platform, internal portals, chatbot automation, API integrations, DevOps
+- **Systems Analyst** — Rede Feminina de Combate ao Câncer *(Jan – Mar 2024)*
+  - Digital transformation of the NGO's operations
+- **Apprentice** — TRBR *(2022)*
+  - First professional experience: data management and administrative support
 
-### Execuções Seguintes
+---
 
-Nas próximas execuções, o script usará o token salvo e não pedirá autorização novamente:
+## 🌍 Languages
 
-```bash
-python classroom_checker.py
-```
+- **English** — Fluent
+- **Portuguese** — Native
+- **Spanish** — Basic
 
-### Saída Esperada
+---
 
-O script exibirá algo assim:
+<div align="center">
 
-```
-🎓 Google Classroom - Verificador de Atividades Pendentes
+### GitHub Stats
 
-Buscando seus cursos...
-Encontrados 3 curso(s) ativo(s).
+![Pedro's GitHub stats](https://github-readme-stats.vercel.app/api?username=darthcode66&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&text_color=e6edf3&icon_color=6366f1&title_color=6366f1)
 
-Verificando atividades pendentes...
-  • Verificando: Matemática
-  • Verificando: Português
-  • Verificando: História
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=darthcode66&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&text_color=e6edf3&title_color=6366f1)
 
-================================================================================
-ATIVIDADES PENDENTES NO GOOGLE CLASSROOM
-================================================================================
+![GitHub Streak](https://streak-stats.dev/?user=darthcode66&theme=github-dark-tokociti&hide_border=true&stroke=6366f1&fire=6366f1&currstreaknum=e6edf3&sideNums=e6edf3&currstreaktext=e6edf3&datestext=8b949e&daystext=8b949e&titleText=e6edf3)
 
-Total: 5 atividade(s) pendente(s)
-
-────────────────────────────────────────────────────────────────────────────────
-📚 CURSO: Matemática
-────────────────────────────────────────────────────────────────────────────────
-   2 atividade(s) pendente(s)
-
-🔴 1. Lista de Exercícios - Álgebra
-   Status: ATRASADA
-   Prazo: 25/10/2025 às 23:59
-   Pontos: 10.0
-   Link: https://classroom.google.com/c/...
-
-🟡 2. Trabalho sobre Geometria
-   Status: PENDENTE
-   Prazo: 05/11/2025
-   Pontos: 15.0
-   Link: https://classroom.google.com/c/...
-
-================================================================================
-```
-
-## 🔒 Segurança
-
-- **NUNCA** compartilhe seus arquivos `credentials.json` ou `token.pickle`
-- Estes arquivos estão no `.gitignore` para evitar commits acidentais
-- Se você acidentalmente compartilhar suas credenciais, revogue-as imediatamente no [Google Cloud Console](https://console.cloud.google.com/)
-
-## 🐛 Solução de Problemas
-
-### Erro de Escopos/Permissões
-
-Se você receber um erro como:
-```
-Scope has changed from "..." to "..."
-```
-
-**SOLUÇÃO RÁPIDA:**
-1. Delete o arquivo `token.pickle`
-2. Veja o arquivo **[TROUBLESHOOTING.md](TROUBLESHOOTING.md)** para instruções detalhadas
-
-### Erro: "credentials.json não encontrado"
-
-Certifique-se de que você:
-1. Baixou o arquivo de credenciais do Google Cloud Console
-2. Renomeou para `credentials.json`
-3. Colocou na mesma pasta do script
-
-### Outros Problemas
-
-Para todos os outros problemas, consulte o guia completo: **[TROUBLESHOOTING.md](TROUBLESHOOTING.md)**
-
-## 📝 Notas
-
-- Este script é **somente leitura** - ele não modifica nada no Google Classroom
-- As credenciais são armazenadas localmente e nunca são enviadas para servidores terceiros
-- O script funciona com qualquer conta Google que tenha acesso ao Classroom
-
-## 🤝 Contribuindo
-
-Sinta-se à vontade para abrir issues ou pull requests com melhorias!
-
-## 📄 Licença
-
-Este projeto é de código aberto e está disponível para uso educacional.
+</div>
